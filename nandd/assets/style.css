@@ -1,8 +1,10 @@
 
 body {
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-	background: ;
-	color: ;
+	background: #1C2216;
+	color: #B5B5B5;
+	margin: 0 auto;
+	width: 600px;
 }
 
 blockquote {
@@ -14,10 +16,26 @@ blockquote {
 }
 
 header {
+	font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
 	text-align: center;
-	font-size: 3em;
+	font-size: 3.5em;
+	font-weight: 300;
+	background: #1EAD11;
+	color: black;
+	border-radius: 0 0 10px 10px;
+	margin: 0;
 }
 
-.comments {
+article {
+	border: 1px solid black;
+	border-radius: 20px;
+	margin: 1.5em;
+}
+
+article h1, article p {
+	margin: 0.5em auto 0.5em 2em;
+}
+
+.react {
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
