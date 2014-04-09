@@ -1,10 +1,37 @@
+/*
+This is the stylesheet for NandD, a theme being developed for janmiller.nl
+Author: 	Jan Miller ( jan@janmiller.nl )
+Github:		https://github.com/JanvierCF/blagsite
+
+Class definitions:
+------------------
+react :		The comment section.
+sidebar:	Self-explanatory (I hope).
+CClogo:		The creative commons logo/link in the footer. It looked misaligned with the text.
+comments:	Indicator for the amount of comments.
+date:		Creation date of the document.
+*/
+
+/* Layout */
+html {
+	
+}
 
 body {
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 	background: #1C2216;
 	color: #B5B5B5;
 	margin: 0 auto;
-	width: 600px;
+	width: 800px;
+}
+
+.sidebar {
+	
+}
+
+footer {
+	text-align: center;
+	margin-right: 80px;
 }
 
 blockquote {
@@ -16,24 +43,28 @@ blockquote {
 }
 
 header {
-	font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
 	text-align: center;
 	font-size: 3.5em;
 	font-weight: 300;
-	background: rgba(34,177,76,.8);/*#1EAD11;*/
+	background: rgba(34,177,76,.8);
 	color: black;
 	border-radius: 0 0 10px 10px;
-	margin: 0;
+	margin: -10px 0 0 0;
 }
 
 article {
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 20px;
 	margin: 1.5em;
 }
 
 article h1, article p {
-	margin: 0.5em auto 0.5em 2em;
+	margin: 0.5em 2em 0.5em 2em;
+}
+
+.CClogo {
+	position: relative;
+	top: 3px;
 }
 
 .react {
