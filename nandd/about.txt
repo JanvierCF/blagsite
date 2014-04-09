@@ -1,0 +1,5 @@
+Theme name:    NandD
+Description:   A theme for janmiller.nl
+Author name:   janvier
+Author site:   http://janmiller.nl
+License:       http://licence.visualidiot.com

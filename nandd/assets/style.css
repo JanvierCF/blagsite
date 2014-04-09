@@ -1,0 +1,23 @@
+
+body {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	background: ;
+	color: ;
+}
+
+blockquote {
+	margin: 0;
+	padding: 1em;
+	font-weight: 300;
+	font-size: 1.5em;
+	color: #aca9a2;
+}
+
+header {
+	text-align: center;
+	font-size: 3em;
+}
+
+.comments {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
