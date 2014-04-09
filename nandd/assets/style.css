@@ -10,6 +10,7 @@ sidebar:	Self-explanatory (I hope).
 CClogo:		The creative commons logo/link in the footer. It looked misaligned with the text.
 comments:	Indicator for the amount of comments.
 date:		Creation date of the document.
+night:		Toggle class for the Day / Night colourschemes.
 */
 
 /* Layout */
@@ -69,4 +70,52 @@ article h1, article p {
 
 .react {
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/*	Typography			*/
+
+/*	Reset				*/
+h1, h2, h3, h4, h5, h6, p, a, small, ul, li, blockquote, code, strong, input, textarea {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+
+/*	Headings by Day	*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-weight: 400;
+	color: black;
+}
+
+/*	Headings at Night */
+.night h1, h2, h3, h4, h5, h6 {
+	color: #615e57;
+}
+
+/*	Title links	by Day*/
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: inherit;
+	color: black;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color: white;
+}
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+	color: black;
+}
+
+/*	Title links at Night */
+.night h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #615e57;
+}
+.night h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color: #4F4C47;
+}
+.night h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+	color: #615e57;
+}
+
+a {
+	text-decoration: none;
 }
