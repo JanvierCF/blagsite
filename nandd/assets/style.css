@@ -6,28 +6,22 @@ Github:		https://github.com/JanvierCF/blagsite
 Class definitions:
 ------------------
 react :		The comment section.
-sidebar:	Self-explanatory (I hope).
 CClogo:		The creative commons logo/link in the footer. It looked misaligned with the text.
+posts:		Container class for individual articles.
 comments:	Indicator for the amount of comments.
 date:		Creation date of the document.
-night:		Toggle class for the Day / Night colourschemes.
+tags:		Duh
+night:		Toggle class for the Day / Night colour-schemes.
 */
 
-/* Layout */
-html {
-	
-}
-
+/* Layout 		*/
 body {
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-	background: #1C2216;
-	color: #B5B5B5;
-	margin: 0 auto;
-	width: 800px;
+	background: white;
+	margin: 1em auto;
 }
 
-.sidebar {
-	
+.night body {
+	background: #1C2216;
 }
 
 footer {
@@ -38,29 +32,58 @@ footer {
 blockquote {
 	margin: 0;
 	padding: 1em;
-	font-weight: 300;
-	font-size: 1.5em;
-	color: #aca9a2;
 }
 
 header {
 	text-align: center;
 	font-size: 3.5em;
 	font-weight: 300;
-	background: rgba(34,177,76,.8);
-	color: black;
+	color: rgba(34,177,76,.8);
 	border-radius: 0 0 10px 10px;
-	margin: -10px 0 0 0;
+}
+
+nav {
+	text-align: center;
+	}
+
+nav h1 {
+	padding: 1em;
+	display: inline;
+}
+
+.posts {
+	margin: 0 auto;
+	max-width: 800px;
 }
 
 article {
-	border: 2px solid black;
+	border: 2px solid rgba(34,177,76,.8);
 	border-radius: 20px;
-	margin: 1.5em;
+	margin: 1em;
+	overflow: auto;
 }
 
-article h1, article p {
+article h1, article p, article blockquote, article code {
 	margin: 0.5em 2em 0.5em 2em;
+}
+
+.date {
+	position: relative;
+	float: right;
+	padding-top: 0.75em;
+}
+
+.tags {
+	position: relative;
+	float: left;
+	padding: 1em;
+}
+
+.comments {
+	position: relative;
+	text-align: right;
+	float: right;
+	padding: 1em;
 }
 
 .CClogo {
@@ -68,11 +91,12 @@ article h1, article p {
 	top: 3px;
 }
 
-.react {
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-}
 
-/*	Typography			*/
+/*	Typography, general / Day	*/
+/*	Palatino font stack es #1 huehue	*/
+html {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;	
+}
 
 /*	Reset				*/
 h1, h2, h3, h4, h5, h6, p, a, small, ul, li, blockquote, code, strong, input, textarea {
@@ -81,19 +105,18 @@ h1, h2, h3, h4, h5, h6, p, a, small, ul, li, blockquote, code, strong, input, te
 	font-style: normal;
 }
 
-/*	Headings by Day	*/
+/*	Standard by Day		*/
+body {
+	color: yellow;
+}
+
+/*	Headings by Day		*/
 h1, h2, h3, h4, h5, h6 {
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 	font-weight: 400;
 	color: black;
 }
 
-/*	Headings at Night */
-.night h1, h2, h3, h4, h5, h6 {
-	color: #615e57;
-}
-
-/*	Title links	by Day*/
+/*	Title links	by Day 	*/
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-weight: inherit;
 	color: black;
@@ -105,7 +128,42 @@ h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
 	color: black;
 }
 
-/*	Title links at Night */
+/*	Date size (inherits from h1) and color by Day	*/
+.date {
+	font-size: 0.5em;
+	color: cyan;
+}
+
+/*	Quotes by day		*/
+blockquote {
+	font-weight: 300;
+	font-size: 1.1em;
+	font-style: oblique;
+	color: green;
+}
+
+/*	Comment section fonts	*/
+.react {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/*	Goofy link stuff	*/
+a {
+	text-decoration: none;
+}
+
+/*	Typography, Night	*/
+/*	Standard at Night	*/
+.night body {
+	color: #B5B5B5;
+}
+
+/*	Headings at Night 	*/
+.night h1, h2, h3, h4, h5, h6 {
+	color: #615e57;
+}
+
+/*	Title links at Night	*/
 .night h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: #615e57;
 }
@@ -116,6 +174,12 @@ h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
 	color: #615e57;
 }
 
-a {
-	text-decoration: none;
+/*	Date colour at Night	*/
+.date {
+	color: #B5B5B5;
+}
+
+/*	Quotes at Night		*/
+blockquote {
+	color: #ddd;
 }
